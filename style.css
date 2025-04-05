@@ -1,10 +1,5 @@
 /* "img" selector sa zadatim vrednostima ti definiše da sve slike na sajtu budu responzivne. */
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 body {
   font-family: Friz Quadrata;
   background-color: #000917;
@@ -93,6 +88,15 @@ a:hover {
     /* filter: grayscale(100%); */
 }
 
+.storeicon {
+    width: 150px;
+    /* filter: grayscale(100%); */
+}
+
+.gameicon {
+    heigth: 200px;
+    /* filter: grayscale(100%); */
+}
 
 @font-face {
 	font-family: 'Friz Quadrata';
