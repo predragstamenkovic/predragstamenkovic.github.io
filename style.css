@@ -5,6 +5,11 @@ body {
   background-color: #000917;
 }
 
+iframe {
+	width: 100%;
+	height: auto;
+}
+
 .banner {
 	background: url(images/Banner2.png);
 	background-repeat: no-repeat;
