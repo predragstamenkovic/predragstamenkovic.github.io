@@ -18,12 +18,31 @@ iframe {
 	aspect-ratio: var(--r);
 	width: min(100%, min(1920px, 100vh*(var(--r))));*/
 	width: 100%;
+	min-width: 800px;
 	position: relative;
 	height: 253px;
 	text-align: right;
 	top: 0; 
 	left: 0;
     overflow: hidden;
+}
+
+.linksmenu {
+	background: url(images/orc_menu.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 33vh;
+	aspect-ratio: 1.3;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.hovertext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
 }
 
 .instilogo {
@@ -34,9 +53,6 @@ iframe {
 a:hover {
     /* font-weight: 400; */
     text-decoration: none;
-    border-bottom: 1px solid blue;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
     /* color: #444; */
 }
 
@@ -105,6 +121,95 @@ a:hover {
 .gameicon {
     heigth: 200px;
     /* filter: grayscale(100%); */
+}
+
+#borderimg {
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url(images/orc-borders.png) 30 round;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galleryContainer {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides* {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.galleryRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.galleryColumn {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+[class^="demo"] {
+  opacity: 0.6;
+}
+
+.active,
+[class^="demo"]:hover {
+  opacity: 1;
 }
 
 @font-face {
